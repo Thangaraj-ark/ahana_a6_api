@@ -17,7 +17,7 @@ use common\models\PatTimeline;
 use common\models\ResetPasswordForm;
 use common\models\CoAuditLog;
 use common\models\AppConfiguration;
-use IRISORG\models\ContactForm;
+use IRISADMIN\models\ContactForm;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\data\ActiveDataProvider;
@@ -27,13 +27,12 @@ use yii\filters\auth\QueryParamAuth;
 use yii\filters\ContentNegotiator;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
-use yii\rest\ActiveController;
 use yii\web\Response;
 
 /**
  * User controller
  */
-class UserController extends ActiveController {
+class UserController extends BaseActiveController {
 
     public $modelClass = 'common\models\CoUser';
 
