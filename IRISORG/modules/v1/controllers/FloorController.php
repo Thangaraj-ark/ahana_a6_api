@@ -9,13 +9,12 @@ use yii\data\ActiveDataProvider;
 use yii\db\BaseActiveRecord;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\ContentNegotiator;
-use yii\rest\ActiveController;
 use yii\web\Response;
 
 /**
  * FloorController implements the CRUD actions for CoTenant model.
  */
-class FloorController extends ActiveController {
+class FloorController extends BaseActiveController {
 
     public $modelClass = 'common\models\CoFloor';
 

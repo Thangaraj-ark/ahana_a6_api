@@ -9,14 +9,13 @@ use common\models\CoAuditLog;
 use yii\db\BaseActiveRecord;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\ContentNegotiator;
-use yii\rest\ActiveController;
 use yii\web\Response;
 use common\models\PatAllergies;
 
 /**
  * WardController implements the CRUD actions for CoTenant model.
  */
-class PatientallergiesController extends ActiveController {
+class PatientallergiesController extends BaseActiveController {
 
     public $modelClass = 'common\models\PatAllergies';
 

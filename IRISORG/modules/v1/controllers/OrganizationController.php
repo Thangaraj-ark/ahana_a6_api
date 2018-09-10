@@ -16,13 +16,12 @@ use common\models\CoOrgSetting;
 use Yii;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\ContentNegotiator;
-use yii\rest\ActiveController;
 use yii\web\Response;
 
 /**
  * OrganizationController implements the CRUD actions for CoTenant model.
  */
-class OrganizationController extends ActiveController {
+class OrganizationController extends BaseActiveController {
 
     public $modelClass = 'common\models\CoTenant';
 

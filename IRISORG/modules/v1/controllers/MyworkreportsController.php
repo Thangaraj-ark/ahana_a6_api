@@ -9,13 +9,12 @@ use common\models\VBillingProfessionals;
 use Yii;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\ContentNegotiator;
-use yii\rest\ActiveController;
 use yii\web\Response;
 
 /**
  * WardController implements the CRUD actions for CoTenant model.
  */
-class MyworkreportsController extends ActiveController {
+class MyworkreportsController extends BaseActiveController {
 
     public $modelClass = 'common\models\PhaPurchase';
 
