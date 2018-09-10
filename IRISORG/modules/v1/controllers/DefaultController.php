@@ -19,15 +19,13 @@ use common\models\PatDiagnosis;
 use common\models\PatDsmiv;
 use common\models\PatEncounter;
 use common\models\PatScheduleCharge;
-use common\models\AppConfiguration;
 use Yii;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\ContentNegotiator;
 use yii\helpers\ArrayHelper;
-use yii\web\Controller;
 use yii\web\Response;
 
-class DefaultController extends Controller {
+class DefaultController extends BaseController {
 
     public function behaviors() {
         $behaviors = parent::behaviors();
