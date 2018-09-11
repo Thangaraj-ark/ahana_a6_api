@@ -6,11 +6,10 @@ use Yii;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\ContentNegotiator;
 use yii\helpers\FileHelper;
-use yii\web\Controller;
 use yii\web\Response;
 use \common\models\PatDocumentTypes;
 
-class XmlController extends Controller {
+class XmlController extends BaseController {
 
     public function behaviors() {
         $behaviors = parent::behaviors();

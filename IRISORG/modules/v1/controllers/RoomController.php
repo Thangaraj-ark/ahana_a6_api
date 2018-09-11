@@ -12,13 +12,12 @@ use yii\db\Expression;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\ContentNegotiator;
 use yii\helpers\Html;
-use yii\rest\ActiveController;
 use yii\web\Response;
 
 /**
  * WardController implements the CRUD actions for CoTenant model.
  */
-class RoomController extends ActiveController {
+class RoomController extends BaseActiveController {
 
     public $modelClass = 'common\models\CoRoom';
 

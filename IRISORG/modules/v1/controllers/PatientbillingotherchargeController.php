@@ -15,14 +15,13 @@ use yii\data\ActiveDataProvider;
 use yii\db\BaseActiveRecord;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\ContentNegotiator;
-use yii\rest\ActiveController;
 use yii\web\Response;
 use yii\helpers\Html;
 
 /**
  * WardController implements the CRUD actions for CoTenant model.
  */
-class PatientbillingotherchargeController extends ActiveController {
+class PatientbillingotherchargeController extends BaseActiveController {
 
     public $modelClass = 'common\models\PatBillingOtherCharges';
 
